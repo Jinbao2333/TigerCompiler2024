@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/allsturead/src  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/prog.cc.o -c /home/stu/tiger-compiler/allsturead/src/straightline/prog.cc",
+  "file": "/home/stu/tiger-compiler/allsturead/src/straightline/prog.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/allsturead/src  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/slp.cc.o -c /home/stu/tiger-compiler/allsturead/src/straightline/slp.cc",
+  "file": "/home/stu/tiger-compiler/allsturead/src/straightline/slp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/allsturead/src  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/test_slp.cc.o -c /home/stu/tiger-compiler/allsturead/src/straightline/test_slp.cc",
+  "file": "/home/stu/tiger-compiler/allsturead/src/straightline/test_slp.cc"
+}
+]

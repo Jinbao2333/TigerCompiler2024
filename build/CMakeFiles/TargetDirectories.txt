@@ -1,0 +1,3 @@
+/home/stu/tiger-compiler/build/CMakeFiles/rebuild_cache.dir
+/home/stu/tiger-compiler/build/CMakeFiles/test_slp.dir
+/home/stu/tiger-compiler/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,2 @@
+SimpleAssign
+args: 0

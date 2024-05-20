@@ -1,0 +1,4 @@
+DoublePrint
+args: 2
+255
+512 1314

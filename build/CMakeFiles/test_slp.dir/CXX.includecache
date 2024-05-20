@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stu/tiger-compiler/allsturead/src/straightline/prog.cc
+straightline/prog.h
+/home/stu/tiger-compiler/allsturead/src/straightline/straightline/prog.h
+straightline/slp.h
+/home/stu/tiger-compiler/allsturead/src/straightline/straightline/slp.h
+
+/home/stu/tiger-compiler/allsturead/src/straightline/prog.h
+straightline/slp.h
+/home/stu/tiger-compiler/allsturead/src/straightline/straightline/slp.h
+
+/home/stu/tiger-compiler/allsturead/src/straightline/slp.cc
+straightline/slp.h
+/home/stu/tiger-compiler/allsturead/src/straightline/straightline/slp.h
+iostream
+-
+
+/home/stu/tiger-compiler/allsturead/src/straightline/slp.h
+algorithm
+-
+cassert
+-
+string
+-
+list
+-
+
+/home/stu/tiger-compiler/allsturead/src/straightline/test_slp.cc
+cassert
+-
+cstdio
+-
+cstdlib
+-
+straightline/prog.h
+/home/stu/tiger-compiler/allsturead/src/straightline/straightline/prog.h
+
