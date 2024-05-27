@@ -23,19 +23,19 @@ build:
 build-debug:transform
 	mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
 
-gradelab1:transform
+gradelab1:
 	bash scripts/grade.sh lab1
 
-gradelab2:transform
+gradelab2:
 	bash scripts/grade.sh lab2
 
-gradelab3:transform
+gradelab3:
 	bash scripts/grade.sh lab3
 
-gradelab4:transform
+gradelab4:
 	bash scripts/grade.sh lab4
 
-gradelab5-1:transform
+gradelab5-1:
 	bash scripts/grade.sh lab5-part1
 
 gradelab5:transform
