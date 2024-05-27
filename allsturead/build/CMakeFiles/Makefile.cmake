@@ -47,4 +47,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_parse.dir/DependInfo.cmake"
   "CMakeFiles/test_lex.dir/DependInfo.cmake"
   "CMakeFiles/test_semant.dir/DependInfo.cmake"
+  "CMakeFiles/test_translate.dir/DependInfo.cmake"
   )

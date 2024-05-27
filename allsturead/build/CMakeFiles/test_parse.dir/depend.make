@@ -4,29 +4,67 @@
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o: ../src/tiger/absyn/absyn.cc
 
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/semant/semant.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/translate/translate.h
+CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o: ../src/tiger/env/env.cc
 
 CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o: ../src/tiger/errormsg/errormsg.h
 CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o: ../src/tiger/errormsg/errormsg.cc
 
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/absyn/absyn.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/env/env.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/frame/temp.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/semant/types.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/translate/tree.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/util/table.h
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/escape/escape.cc
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: ../src/tiger/frame/temp.h
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: ../src/tiger/util/table.h
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: ../src/tiger/frame/temp.cc
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/frame/temp.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/frame/x64frame.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/translate/tree.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/util/table.h
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/frame/x64frame.cc
+
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/parse/parserbase.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/lex/lex.cc
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/lex/scanner.h
@@ -36,24 +74,32 @@ CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/lex/scannerbase.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/lex/scanner.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/lex/scannerbase.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/parse/parser.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/parse/parserbase.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o: ../src/tiger/main/test_parse.cc
 
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/lex/scanner.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/lex/scannerbase.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parser.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parserbase.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parse.cc
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parser.ih
@@ -61,9 +107,13 @@ CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parser.
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/absyn/absyn.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/env/env.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/frame/temp.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/semant/semant.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/semant/types.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/translate/tree.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/semant/semant.cc
 
@@ -75,4 +125,24 @@ CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o: ../src/tiger/semant/types
 CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o: ../src/tiger/symbol/symbol.h
 CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o: ../src/tiger/util/table.h
 CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o: ../src/tiger/symbol/symbol.cc
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/absyn/absyn.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/env/env.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/errormsg/errormsg.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/escape/escape.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/frame/frame.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/frame/temp.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/frame/x64frame.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/semant/types.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/translate/translate.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/translate/tree.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/util/table.h
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/translate/translate.cc
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/frame/temp.h
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/symbol/symbol.h
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/translate/tree.h
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/util/table.h
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/translate/tree.cc
 

@@ -1,44 +1,50 @@
 .PHONY: docker-build docker-pull docker-run docker-run-backend transform build gradelab1 gradelab2 gradelab3 gradelab4 gradelab5 gradelab6 gradeall clean register format
 
 docker-build:
-	docker build -t cs-ttb/tigerlabs_env .
+	docker build -t ipadsse302/tigerlabs_env .
 
 docker-pull:
-	docker pull yuexizou/tiger-compiler-env:tiger
+	docker pull ipadsse302/tigerlabs_env:latest
 
 docker-run:
-	docker run -it --platform linux/amd64 --privileged -p 2222:22 \
-		-v $(shell pwd):/home/stu/tiger-compiler yuexizou/tiger-compiler-env:tiger
+	docker run -it --privileged -p 2222:22 \
+		-v $(shell pwd):/home/stu/tiger-compiler ipadsse302/tigerlabs_env:latest
 
 docker-run-backend:
-	docker run -dt --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --security-opt apparmor=unconfined -p 2222:22 \
-		-v $(shell pwd):/home/stu/tiger-compiler yuexizou/tiger-compiler-env:tiger
+	docker run -dt --privileged -p 2222:22 \
+		-v $(shell pwd):/home/stu/tiger-compiler ipadsse302/tigerlabs_env:latest
+
+transform:
+	find src scripts testdata -type f | xargs -I % sh -c 'dos2unix -n % /tmp/tmp; mv -f /tmp/tmp % || true;'
 
 build:
 	mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
 
-build-debug:
+build-debug:transform
 	mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make
 
-gradelab1:
+gradelab1:transform
 	bash scripts/grade.sh lab1
 
-gradelab2:
+gradelab2:transform
 	bash scripts/grade.sh lab2
 
-gradelab3:
+gradelab3:transform
 	bash scripts/grade.sh lab3
 
-gradelab4:
+gradelab4:transform
 	bash scripts/grade.sh lab4
 
-gradelab5:
+gradelab5-1:transform
+	bash scripts/grade.sh lab5-part1
+
+gradelab5:transform
 	bash scripts/grade.sh lab5
 
-gradelab6:
+gradelab6:transform
 	bash scripts/grade.sh lab6
 
-gradeall:
+gradeall:transform
 	bash scripts/grade.sh all
 
 ziplab1:
@@ -57,14 +63,24 @@ ziplab3:
 
 ziplab4:
 	zip -j lab4-answer.zip \
-    src/tiger/parse/tiger.y \
-    src/tiger/lex/tiger.lex \
-    src/tiger/lex/scanner.h \
-    src/tiger/semant/semant.h \
-    src/tiger/semant/semant.cc
+        src/tiger/parse/tiger.y \
+        src/tiger/lex/tiger.lex \
+        src/tiger/lex/scanner.h \
+        src/tiger/semant/semant.h \
+        src/tiger/semant/semant.cc
 
-zipclean:
-	rm -rf *.zip
+ziplab5-1:
+	zip -j lab5-1-answer.zip \
+        src/tiger/parse/tiger.y \
+        src/tiger/lex/tiger.lex \
+        src/tiger/lex/scanner.h \
+        src/tiger/semant/semant.h \
+        src/tiger/semant/semant.cc \
+        src/tiger/escape/escape.* \
+        src/tiger/frame/frame.h \
+        src/tiger/frame/temp.* \
+        src/tiger/frame/x64frame.* \
+        src/tiger/translate/translate.*
 
 clean:
 	rm -rf build/ src/tiger/lex/scannerbase.h src/tiger/lex/lex.cc \

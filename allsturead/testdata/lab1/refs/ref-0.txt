@@ -1,2 +1,16 @@
-SimpleAssign
-args: 0
+Prog
+args: 2
+8 7 
+80 
+ProgProg
+args: 3
+8 7 
+80 
+85 85 84 
+850 
+RightProg
+args: 3
+8 7 
+80 
+85 85 84 
+850 

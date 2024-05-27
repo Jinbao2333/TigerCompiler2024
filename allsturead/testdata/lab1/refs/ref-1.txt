@@ -1,3 +1,16 @@
-SimplePrint
-args: 1
-5201314
+ProgProg
+args: 3
+8 7 
+80 
+85 85 84 
+850 
+Prog
+args: 2
+8 7 
+80 
+RightProg
+args: 3
+8 7 
+80 
+85 85 84 
+850 

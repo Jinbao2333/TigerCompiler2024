@@ -191,9 +191,33 @@ CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o.provides: CMakeFiles/test_parse
 CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o
 
 
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: CMakeFiles/test_parse.dir/flags.make
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o: ../src/tiger/escape/escape.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc
+
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stu/tiger-compiler/src/tiger/escape/escape.cc > CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.i
+
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stu/tiger-compiler/src/tiger/escape/escape.cc -o CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.s
+
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.requires:
+
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.requires
+
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.provides: CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.provides.build
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.provides
+
+CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o
+
+
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: CMakeFiles/test_parse.dir/flags.make
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o: ../src/tiger/semant/semant.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc
 
 CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.i: cmake_force
@@ -217,7 +241,7 @@ CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o.provides.build: CMakeFile
 
 CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o: CMakeFiles/test_parse.dir/flags.make
 CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o: ../src/tiger/semant/types.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc
 
 CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.i: cmake_force
@@ -239,9 +263,105 @@ CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o.provides: CMakeFiles/test_
 CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o
 
 
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: CMakeFiles/test_parse.dir/flags.make
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o: ../src/tiger/frame/temp.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stu/tiger-compiler/src/tiger/frame/temp.cc > CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.i
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stu/tiger-compiler/src/tiger/frame/temp.cc -o CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.s
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.requires:
+
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.requires
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.provides: CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.provides.build
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.provides
+
+CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o
+
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: CMakeFiles/test_parse.dir/flags.make
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o: ../src/tiger/frame/x64frame.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc > CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.i
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc -o CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.s
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.requires:
+
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.requires
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.provides: CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.provides.build
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.provides
+
+CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o
+
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: CMakeFiles/test_parse.dir/flags.make
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o: ../src/tiger/translate/translate.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stu/tiger-compiler/src/tiger/translate/translate.cc > CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.i
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stu/tiger-compiler/src/tiger/translate/translate.cc -o CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.s
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.requires:
+
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.requires
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.provides: CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.provides.build
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.provides
+
+CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o
+
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: CMakeFiles/test_parse.dir/flags.make
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o: ../src/tiger/translate/tree.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stu/tiger-compiler/src/tiger/translate/tree.cc > CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.i
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stu/tiger-compiler/src/tiger/translate/tree.cc -o CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.s
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.requires:
+
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.requires
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.provides: CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.provides.build
+.PHONY : CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.provides
+
+CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.provides.build: CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o
+
+
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: CMakeFiles/test_parse.dir/flags.make
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o: ../src/tiger/lex/lex.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc
 
 CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.i: cmake_force
@@ -265,7 +385,7 @@ CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o.provides.build: CMakeFiles/test
 
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: CMakeFiles/test_parse.dir/flags.make
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o: ../src/tiger/parse/parse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc
 
 CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.i: cmake_force
@@ -294,8 +414,13 @@ test_parse_OBJECTS = \
 "CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o" \
+"CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o" \
+"CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o" \
+"CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o" \
+"CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o" \
+"CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o" \
 "CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o"
 
@@ -307,13 +432,18 @@ test_parse: CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o
+test_parse: CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o
+test_parse: CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o
+test_parse: CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o
+test_parse: CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o
+test_parse: CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o
 test_parse: CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o
 test_parse: CMakeFiles/test_parse.dir/build.make
 test_parse: CMakeFiles/test_parse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable test_parse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable test_parse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_parse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -326,8 +456,13 @@ CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/symbol/s
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o.requires
+CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o.requires
+CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o.requires
+CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o.requires
+CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o.requires
+CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o.requires
 CMakeFiles/test_parse.dir/requires: CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o.requires
 

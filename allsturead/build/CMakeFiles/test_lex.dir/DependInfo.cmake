@@ -7,12 +7,17 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.o"
   "/home/stu/tiger-compiler/src/tiger/env/env.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/env/env.cc.o"
   "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.o"
+  "/home/stu/tiger-compiler/src/tiger/escape/escape.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/escape/escape.cc.o"
+  "/home/stu/tiger-compiler/src/tiger/frame/temp.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/frame/temp.cc.o"
+  "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/frame/x64frame.cc.o"
   "/home/stu/tiger-compiler/src/tiger/lex/lex.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.o"
   "/home/stu/tiger-compiler/src/tiger/main/test_lex.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/main/test_lex.cc.o"
   "/home/stu/tiger-compiler/src/tiger/parse/parse.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.o"
   "/home/stu/tiger-compiler/src/tiger/semant/semant.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.o"
   "/home/stu/tiger-compiler/src/tiger/semant/types.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.o"
   "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.o"
+  "/home/stu/tiger-compiler/src/tiger/translate/translate.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/translate/translate.cc.o"
+  "/home/stu/tiger-compiler/src/tiger/translate/tree.cc" "/home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir/src/tiger/translate/tree.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
