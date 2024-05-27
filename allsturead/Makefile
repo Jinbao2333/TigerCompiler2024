@@ -14,6 +14,9 @@ docker-run-backend:
 	docker run -dt --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --security-opt apparmor=unconfined -p 2222:22 \
 		-v $(shell pwd):/home/stu/tiger-compiler yuexizou/tiger-compiler-env:tiger
 
+transform:
+	find src scripts testdata -type f | xargs -I % sh -c 'dos2unix -n % /tmp/tmp; mv -f /tmp/tmp % || true;'
+
 build:
 	mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
 
