@@ -40,8 +40,9 @@
 
  /* token priority */
  /* DONE: Lab3 code is already here ^_*/
-%left AND OR
-%nonassoc EQ NEQ GT LT GE LE
+%left OR
+%left AND
+%nonassoc EQ NEQ LT LE GT GE
 %left PLUS MINUS
 %left TIMES DIVIDE
 
@@ -69,12 +70,12 @@ program:  exp  {absyn_tree_ = std::make_unique<absyn::AbsynTree>($1);};
 
 /* DONE: Lab3 code is already here ^_*/
 
-exp:
+exp:  
   // Constant exps
     INT {$$ = new absyn::IntExp(scanner_.GetTokPos(), $1);}
   | STRING {$$ = new absyn::StringExp(scanner_.GetTokPos(), $1);}
   | NIL {$$ = new absyn::NilExp(scanner_.GetTokPos());}
-
+  
   // Variable exps
   | lvalue {$$ = new absyn::VarExp(scanner_.GetTokPos(), $1);}
 
@@ -119,8 +120,8 @@ exp:
   | exp GE exp {$$ = new absyn::OpExp(scanner_.GetTokPos(), absyn::Oper::GE_OP, $1, $3);}
 
   // Logical exps
-  | exp AND exp {$$ = new absyn::OpExp(scanner_.GetTokPos(), absyn::Oper::AND_OP, $1, $3);}
-  | exp OR exp {$$ = new absyn::OpExp(scanner_.GetTokPos(), absyn::Oper::OR_OP, $1, $3);}
+  | exp AND exp {$$ = new absyn::IfExp(scanner_.GetTokPos(), $1, $3, new absyn::IntExp(scanner_.GetTokPos(), 0));}
+  | exp OR exp {$$ = new absyn::IfExp(scanner_.GetTokPos(), $1, new absyn::IntExp(scanner_.GetTokPos(), 1), $3);}
 
   // Unary exps
   | MINUS exp {$$ = new absyn::OpExp(scanner_.GetTokPos(), absyn::Oper::MINUS_OP, new absyn::IntExp(scanner_.GetTokPos(), 0), $2);}
