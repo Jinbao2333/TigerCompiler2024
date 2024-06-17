@@ -8,7 +8,7 @@ are more suitable for these labs and less error-prone.
 We provide you all the codes of all labs at one time. In each lab, you only
 need to code in some of the directories.
 
-## Difference Between C Labs and C++ Labs
+## Difference Between C Labs and C++ Labs 
 
 1. Tiger compiler in C++ uses [flexc++](https://fbb-git.gitlab.io/flexcpp/manual/flexc++.html) and [bisonc++](https://fbb-git.gitlab.io/bisoncpp/manual/bisonc++.html) instead of flex and bison because flexc++ and bisonc++ is more flexc++ and bisonc++ are able to generate pure C++ codes instead of C codes wrapped in C++ files.
 
