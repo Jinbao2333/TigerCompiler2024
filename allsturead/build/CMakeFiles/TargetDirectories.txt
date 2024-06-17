@@ -1,7 +1,9 @@
 /home/stu/tiger-compiler/build/CMakeFiles/rebuild_cache.dir
+/home/stu/tiger-compiler/build/CMakeFiles/edit_cache.dir
+/home/stu/tiger-compiler/build/CMakeFiles/test_codegen.dir
 /home/stu/tiger-compiler/build/CMakeFiles/test_slp.dir
 /home/stu/tiger-compiler/build/CMakeFiles/lex_parse_sources.dir
 /home/stu/tiger-compiler/build/CMakeFiles/test_parse.dir
 /home/stu/tiger-compiler/build/CMakeFiles/test_lex.dir
-/home/stu/tiger-compiler/build/CMakeFiles/edit_cache.dir
 /home/stu/tiger-compiler/build/CMakeFiles/test_semant.dir
+/home/stu/tiger-compiler/build/CMakeFiles/test_translate.dir

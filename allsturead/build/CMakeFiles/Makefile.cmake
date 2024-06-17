@@ -42,9 +42,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/test_codegen.dir/DependInfo.cmake"
   "CMakeFiles/test_slp.dir/DependInfo.cmake"
   "CMakeFiles/lex_parse_sources.dir/DependInfo.cmake"
   "CMakeFiles/test_parse.dir/DependInfo.cmake"
   "CMakeFiles/test_lex.dir/DependInfo.cmake"
   "CMakeFiles/test_semant.dir/DependInfo.cmake"
+  "CMakeFiles/test_translate.dir/DependInfo.cmake"
   )

@@ -53,6 +53,6 @@ private:
   void FillBaseTEnv();
 };
 
-} // namespace tr
+} // namespace sem
 
 #endif

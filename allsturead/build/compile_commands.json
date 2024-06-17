@@ -1,152 +1,467 @@
 [
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/prog.cc.o -c /home/stu/tiger-compiler/src/straightline/prog.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/main/test_codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/main/test_codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/env/env.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/escape/escape.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/semant/semant.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/semant/types.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/temp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/tree.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/canon/canon.cc.o -c /home/stu/tiger-compiler/src/tiger/canon/canon.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/canon/canon.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/codegen/assem.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/assem.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/assem.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/codegen/codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/output/output.cc.o -c /home/stu/tiger-compiler/src/tiger/output/output.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/output/output.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/lex/lex.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_codegen.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/parse/parse.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/prog.cc.o -c /home/stu/tiger-compiler/src/straightline/prog.cc",
   "file": "/home/stu/tiger-compiler/src/straightline/prog.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/slp.cc.o -c /home/stu/tiger-compiler/src/straightline/slp.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/slp.cc.o -c /home/stu/tiger-compiler/src/straightline/slp.cc",
   "file": "/home/stu/tiger-compiler/src/straightline/slp.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/test_slp.cc.o -c /home/stu/tiger-compiler/src/straightline/test_slp.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_slp.dir/src/straightline/test_slp.cc.o -c /home/stu/tiger-compiler/src/straightline/test_slp.cc",
   "file": "/home/stu/tiger-compiler/src/straightline/test_slp.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_parse.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/main/test_parse.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_parse.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/main/test_parse.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/env/env.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/escape/escape.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/semant.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/types.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/temp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/tree.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/canon/canon.cc.o -c /home/stu/tiger-compiler/src/tiger/canon/canon.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/canon/canon.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/codegen/assem.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/assem.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/assem.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/codegen/codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/output/output.cc.o -c /home/stu/tiger-compiler/src/tiger/output/output.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/output/output.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/lex/lex.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/parse/parse.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/main/test_lex.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_lex.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/main/test_lex.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_lex.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/main/test_lex.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/env/env.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/escape/escape.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/semant.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/types.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/temp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/tree.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/canon/canon.cc.o -c /home/stu/tiger-compiler/src/tiger/canon/canon.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/canon/canon.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/codegen/assem.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/assem.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/assem.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/codegen/codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/output/output.cc.o -c /home/stu/tiger-compiler/src/tiger/output/output.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/output/output.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/lex/lex.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/parse/parse.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/main/test_semant.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_semant.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/main/test_semant.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_semant.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/main/test_semant.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/env/env.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/escape/escape.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/semant.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/semant/types.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/temp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/tree.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/canon/canon.cc.o -c /home/stu/tiger-compiler/src/tiger/canon/canon.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/canon/canon.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/codegen/assem.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/assem.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/assem.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/codegen/codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/output/output.cc.o -c /home/stu/tiger-compiler/src/tiger/output/output.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/output/output.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/lex/lex.cc"
 },
 {
   "directory": "/home/stu/tiger-compiler/build",
-  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -g   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/parse/parse.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/main/test_translate.cc.o -c /home/stu/tiger-compiler/src/tiger/main/test_translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/main/test_translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/symbol/symbol.cc.o -c /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/symbol/symbol.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/absyn/absyn.cc.o -c /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/absyn/absyn.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/errormsg/errormsg.cc.o -c /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/env/env.cc.o -c /home/stu/tiger-compiler/src/tiger/env/env.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/env/env.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/escape/escape.cc.o -c /home/stu/tiger-compiler/src/tiger/escape/escape.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/escape/escape.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/semant/semant.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/semant.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/semant/semant.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/semant/types.cc.o -c /home/stu/tiger-compiler/src/tiger/semant/types.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/semant/types.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/frame/temp.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/temp.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/temp.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/frame/x64frame.cc.o -c /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/frame/x64frame.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/translate/translate.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/translate.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/translate.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/translate/tree.cc.o -c /home/stu/tiger-compiler/src/tiger/translate/tree.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/translate/tree.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/canon/canon.cc.o -c /home/stu/tiger-compiler/src/tiger/canon/canon.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/canon/canon.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/codegen/assem.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/assem.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/assem.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/codegen/codegen.cc.o -c /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/output/output.cc.o -c /home/stu/tiger-compiler/src/tiger/output/output.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/output/output.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/lex/lex.cc.o -c /home/stu/tiger-compiler/src/tiger/lex/lex.cc",
+  "file": "/home/stu/tiger-compiler/src/tiger/lex/lex.cc"
+},
+{
+  "directory": "/home/stu/tiger-compiler/build",
+  "command": "/usr/bin/g++   -I/home/stu/tiger-compiler/src -I/home/stu/tiger-compiler/src/tiger/lex -I/home/stu/tiger-compiler/src/tiger/parse  -O3 -DNDEBUG   -std=gnu++1z -o CMakeFiles/test_translate.dir/src/tiger/parse/parse.cc.o -c /home/stu/tiger-compiler/src/tiger/parse/parse.cc",
   "file": "/home/stu/tiger-compiler/src/tiger/parse/parse.cc"
 }
 ]

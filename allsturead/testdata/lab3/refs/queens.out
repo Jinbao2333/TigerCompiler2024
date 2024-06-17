@@ -129,10 +129,8 @@
                  simpleVar(N)),
                 intExp(1)),
                iffExp(
-                opExp(
-                 AND,
-                 opExp(
-                  AND,
+                iffExp(
+                 iffExp(
                   opExp(
                    EQUAL,
                    varExp(
@@ -152,7 +150,8 @@
                        simpleVar(r)),
                       varExp(
                        simpleVar(c))))),
-                   intExp(0))),
+                   intExp(0)),
+                  intExp(0)),
                  opExp(
                   EQUAL,
                   varExp(
@@ -167,7 +166,8 @@
                       intExp(7)),
                      varExp(
                       simpleVar(c))))),
-                  intExp(0))),
+                  intExp(0)),
+                 intExp(0)),
                 seqExp(
                  expList(
                   assignExp(
