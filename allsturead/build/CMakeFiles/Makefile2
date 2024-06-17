@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/stu/tiger-compiler
 CMAKE_BINARY_DIR = /home/stu/tiger-compiler/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_codegen.dir
+
+# All Build rule for target.
+CMakeFiles/test_codegen.dir/all: CMakeFiles/lex_parse_sources.dir/all
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/depend
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target test_codegen"
+.PHONY : CMakeFiles/test_codegen.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_codegen.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_codegen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_codegen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_codegen.dir/rule
+
+# Convenience name for target.
+test_codegen: CMakeFiles/test_codegen.dir/rule
+
+.PHONY : test_codegen
+
+# clean rule for target.
+CMakeFiles/test_codegen.dir/clean:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/clean
+.PHONY : CMakeFiles/test_codegen.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_codegen.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_slp.dir
 
 # All Build rule for target.
 CMakeFiles/test_slp.dir/all:
 	$(MAKE) -f CMakeFiles/test_slp.dir/build.make CMakeFiles/test_slp.dir/depend
 	$(MAKE) -f CMakeFiles/test_slp.dir/build.make CMakeFiles/test_slp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=39,40,41,42 "Built target test_slp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=78,79,80,81 "Built target test_slp"
 .PHONY : CMakeFiles/test_slp.dir/all
 
 # Include target in all.
@@ -103,12 +140,12 @@ clean: CMakeFiles/test_slp.dir/clean
 CMakeFiles/lex_parse_sources.dir/all:
 	$(MAKE) -f CMakeFiles/lex_parse_sources.dir/build.make CMakeFiles/lex_parse_sources.dir/depend
 	$(MAKE) -f CMakeFiles/lex_parse_sources.dir/build.make CMakeFiles/lex_parse_sources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=1,2 "Built target lex_parse_sources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=1 "Built target lex_parse_sources"
 .PHONY : CMakeFiles/lex_parse_sources.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lex_parse_sources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lex_parse_sources.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
 .PHONY : CMakeFiles/lex_parse_sources.dir/rule
@@ -135,7 +172,7 @@ clean: CMakeFiles/lex_parse_sources.dir/clean
 CMakeFiles/test_parse.dir/all: CMakeFiles/lex_parse_sources.dir/all
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/depend
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26 "Built target test_parse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target test_parse"
 .PHONY : CMakeFiles/test_parse.dir/all
 
 # Include target in all.
@@ -145,7 +182,7 @@ all: CMakeFiles/test_parse.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_parse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_parse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_parse.dir/rule
@@ -172,7 +209,7 @@ clean: CMakeFiles/test_parse.dir/clean
 CMakeFiles/test_lex.dir/all: CMakeFiles/lex_parse_sources.dir/all
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/depend
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14 "Built target test_lex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target test_lex"
 .PHONY : CMakeFiles/test_lex.dir/all
 
 # Include target in all.
@@ -182,7 +219,7 @@ all: CMakeFiles/test_lex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_lex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_lex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_lex.dir/rule
@@ -209,7 +246,7 @@ clean: CMakeFiles/test_lex.dir/clean
 CMakeFiles/test_semant.dir/all: CMakeFiles/lex_parse_sources.dir/all
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/depend
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38 "Built target test_semant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77 "Built target test_semant"
 .PHONY : CMakeFiles/test_semant.dir/all
 
 # Include target in all.
@@ -219,7 +256,7 @@ all: CMakeFiles/test_semant.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_semant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_semant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_semant.dir/rule
@@ -236,6 +273,43 @@ CMakeFiles/test_semant.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/test_semant.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_translate.dir
+
+# All Build rule for target.
+CMakeFiles/test_translate.dir/all: CMakeFiles/lex_parse_sources.dir/all
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/depend
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stu/tiger-compiler/build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target test_translate"
+.PHONY : CMakeFiles/test_translate.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_translate.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_translate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_translate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stu/tiger-compiler/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_translate.dir/rule
+
+# Convenience name for target.
+test_translate: CMakeFiles/test_translate.dir/rule
+
+.PHONY : test_translate
+
+# clean rule for target.
+CMakeFiles/test_translate.dir/clean:
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/clean
+.PHONY : CMakeFiles/test_translate.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_translate.dir/clean
 
 .PHONY : clean
 

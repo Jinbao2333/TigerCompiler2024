@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_codegen
+
+# Build rule for target.
+test_codegen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_codegen
+.PHONY : test_codegen
+
+# fast build rule for target.
+test_codegen/fast:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/build
+.PHONY : test_codegen/fast
+
+#=============================================================================
 # Target rules for targets named test_slp
 
 # Build rule for target.
@@ -174,6 +187,19 @@ test_semant: cmake_check_build_system
 test_semant/fast:
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/build
 .PHONY : test_semant/fast
+
+#=============================================================================
+# Target rules for targets named test_translate
+
+# Build rule for target.
+test_translate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_translate
+.PHONY : test_translate
+
+# fast build rule for target.
+test_translate/fast:
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/build
+.PHONY : test_translate/fast
 
 src/straightline/prog.o: src/straightline/prog.cc.o
 
@@ -262,9 +288,11 @@ src/tiger/absyn/absyn.o: src/tiger/absyn/absyn.cc.o
 
 # target to build an object file
 src/tiger/absyn/absyn.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/absyn/absyn.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/absyn/absyn.cc.o
 .PHONY : src/tiger/absyn/absyn.cc.o
 
 src/tiger/absyn/absyn.i: src/tiger/absyn/absyn.cc.i
@@ -273,9 +301,11 @@ src/tiger/absyn/absyn.i: src/tiger/absyn/absyn.cc.i
 
 # target to preprocess a source file
 src/tiger/absyn/absyn.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/absyn/absyn.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/absyn/absyn.cc.i
 .PHONY : src/tiger/absyn/absyn.cc.i
 
 src/tiger/absyn/absyn.s: src/tiger/absyn/absyn.cc.s
@@ -284,10 +314,129 @@ src/tiger/absyn/absyn.s: src/tiger/absyn/absyn.cc.s
 
 # target to generate assembly for a file
 src/tiger/absyn/absyn.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/absyn/absyn.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/absyn/absyn.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/absyn/absyn.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/absyn/absyn.cc.s
 .PHONY : src/tiger/absyn/absyn.cc.s
+
+src/tiger/canon/canon.o: src/tiger/canon/canon.cc.o
+
+.PHONY : src/tiger/canon/canon.o
+
+# target to build an object file
+src/tiger/canon/canon.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/canon/canon.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/canon/canon.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/canon/canon.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/canon/canon.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/canon/canon.cc.o
+.PHONY : src/tiger/canon/canon.cc.o
+
+src/tiger/canon/canon.i: src/tiger/canon/canon.cc.i
+
+.PHONY : src/tiger/canon/canon.i
+
+# target to preprocess a source file
+src/tiger/canon/canon.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/canon/canon.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/canon/canon.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/canon/canon.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/canon/canon.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/canon/canon.cc.i
+.PHONY : src/tiger/canon/canon.cc.i
+
+src/tiger/canon/canon.s: src/tiger/canon/canon.cc.s
+
+.PHONY : src/tiger/canon/canon.s
+
+# target to generate assembly for a file
+src/tiger/canon/canon.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/canon/canon.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/canon/canon.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/canon/canon.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/canon/canon.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/canon/canon.cc.s
+.PHONY : src/tiger/canon/canon.cc.s
+
+src/tiger/codegen/assem.o: src/tiger/codegen/assem.cc.o
+
+.PHONY : src/tiger/codegen/assem.o
+
+# target to build an object file
+src/tiger/codegen/assem.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/assem.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/assem.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/assem.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/assem.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/assem.cc.o
+.PHONY : src/tiger/codegen/assem.cc.o
+
+src/tiger/codegen/assem.i: src/tiger/codegen/assem.cc.i
+
+.PHONY : src/tiger/codegen/assem.i
+
+# target to preprocess a source file
+src/tiger/codegen/assem.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/assem.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/assem.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/assem.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/assem.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/assem.cc.i
+.PHONY : src/tiger/codegen/assem.cc.i
+
+src/tiger/codegen/assem.s: src/tiger/codegen/assem.cc.s
+
+.PHONY : src/tiger/codegen/assem.s
+
+# target to generate assembly for a file
+src/tiger/codegen/assem.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/assem.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/assem.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/assem.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/assem.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/assem.cc.s
+.PHONY : src/tiger/codegen/assem.cc.s
+
+src/tiger/codegen/codegen.o: src/tiger/codegen/codegen.cc.o
+
+.PHONY : src/tiger/codegen/codegen.o
+
+# target to build an object file
+src/tiger/codegen/codegen.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/codegen.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/codegen.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/codegen.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/codegen.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/codegen.cc.o
+.PHONY : src/tiger/codegen/codegen.cc.o
+
+src/tiger/codegen/codegen.i: src/tiger/codegen/codegen.cc.i
+
+.PHONY : src/tiger/codegen/codegen.i
+
+# target to preprocess a source file
+src/tiger/codegen/codegen.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/codegen.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/codegen.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/codegen.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/codegen.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/codegen.cc.i
+.PHONY : src/tiger/codegen/codegen.cc.i
+
+src/tiger/codegen/codegen.s: src/tiger/codegen/codegen.cc.s
+
+.PHONY : src/tiger/codegen/codegen.s
+
+# target to generate assembly for a file
+src/tiger/codegen/codegen.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/codegen/codegen.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/codegen/codegen.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/codegen/codegen.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/codegen/codegen.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/codegen/codegen.cc.s
+.PHONY : src/tiger/codegen/codegen.cc.s
 
 src/tiger/env/env.o: src/tiger/env/env.cc.o
 
@@ -295,9 +444,11 @@ src/tiger/env/env.o: src/tiger/env/env.cc.o
 
 # target to build an object file
 src/tiger/env/env.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/env/env.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/env/env.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/env/env.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/env/env.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/env/env.cc.o
 .PHONY : src/tiger/env/env.cc.o
 
 src/tiger/env/env.i: src/tiger/env/env.cc.i
@@ -306,9 +457,11 @@ src/tiger/env/env.i: src/tiger/env/env.cc.i
 
 # target to preprocess a source file
 src/tiger/env/env.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/env/env.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/env/env.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/env/env.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/env/env.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/env/env.cc.i
 .PHONY : src/tiger/env/env.cc.i
 
 src/tiger/env/env.s: src/tiger/env/env.cc.s
@@ -317,9 +470,11 @@ src/tiger/env/env.s: src/tiger/env/env.cc.s
 
 # target to generate assembly for a file
 src/tiger/env/env.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/env/env.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/env/env.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/env/env.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/env/env.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/env/env.cc.s
 .PHONY : src/tiger/env/env.cc.s
 
 src/tiger/errormsg/errormsg.o: src/tiger/errormsg/errormsg.cc.o
@@ -328,9 +483,11 @@ src/tiger/errormsg/errormsg.o: src/tiger/errormsg/errormsg.cc.o
 
 # target to build an object file
 src/tiger/errormsg/errormsg.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/errormsg/errormsg.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/errormsg/errormsg.cc.o
 .PHONY : src/tiger/errormsg/errormsg.cc.o
 
 src/tiger/errormsg/errormsg.i: src/tiger/errormsg/errormsg.cc.i
@@ -339,9 +496,11 @@ src/tiger/errormsg/errormsg.i: src/tiger/errormsg/errormsg.cc.i
 
 # target to preprocess a source file
 src/tiger/errormsg/errormsg.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/errormsg/errormsg.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/errormsg/errormsg.cc.i
 .PHONY : src/tiger/errormsg/errormsg.cc.i
 
 src/tiger/errormsg/errormsg.s: src/tiger/errormsg/errormsg.cc.s
@@ -350,10 +509,129 @@ src/tiger/errormsg/errormsg.s: src/tiger/errormsg/errormsg.cc.s
 
 # target to generate assembly for a file
 src/tiger/errormsg/errormsg.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/errormsg/errormsg.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/errormsg/errormsg.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/errormsg/errormsg.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/errormsg/errormsg.cc.s
 .PHONY : src/tiger/errormsg/errormsg.cc.s
+
+src/tiger/escape/escape.o: src/tiger/escape/escape.cc.o
+
+.PHONY : src/tiger/escape/escape.o
+
+# target to build an object file
+src/tiger/escape/escape.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/escape/escape.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/escape/escape.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/escape/escape.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/escape/escape.cc.o
+.PHONY : src/tiger/escape/escape.cc.o
+
+src/tiger/escape/escape.i: src/tiger/escape/escape.cc.i
+
+.PHONY : src/tiger/escape/escape.i
+
+# target to preprocess a source file
+src/tiger/escape/escape.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/escape/escape.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/escape/escape.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/escape/escape.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/escape/escape.cc.i
+.PHONY : src/tiger/escape/escape.cc.i
+
+src/tiger/escape/escape.s: src/tiger/escape/escape.cc.s
+
+.PHONY : src/tiger/escape/escape.s
+
+# target to generate assembly for a file
+src/tiger/escape/escape.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/escape/escape.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/escape/escape.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/escape/escape.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/escape/escape.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/escape/escape.cc.s
+.PHONY : src/tiger/escape/escape.cc.s
+
+src/tiger/frame/temp.o: src/tiger/frame/temp.cc.o
+
+.PHONY : src/tiger/frame/temp.o
+
+# target to build an object file
+src/tiger/frame/temp.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/temp.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/temp.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/temp.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/temp.cc.o
+.PHONY : src/tiger/frame/temp.cc.o
+
+src/tiger/frame/temp.i: src/tiger/frame/temp.cc.i
+
+.PHONY : src/tiger/frame/temp.i
+
+# target to preprocess a source file
+src/tiger/frame/temp.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/temp.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/temp.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/temp.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/temp.cc.i
+.PHONY : src/tiger/frame/temp.cc.i
+
+src/tiger/frame/temp.s: src/tiger/frame/temp.cc.s
+
+.PHONY : src/tiger/frame/temp.s
+
+# target to generate assembly for a file
+src/tiger/frame/temp.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/temp.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/temp.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/temp.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/temp.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/temp.cc.s
+.PHONY : src/tiger/frame/temp.cc.s
+
+src/tiger/frame/x64frame.o: src/tiger/frame/x64frame.cc.o
+
+.PHONY : src/tiger/frame/x64frame.o
+
+# target to build an object file
+src/tiger/frame/x64frame.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/x64frame.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/x64frame.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/x64frame.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/x64frame.cc.o
+.PHONY : src/tiger/frame/x64frame.cc.o
+
+src/tiger/frame/x64frame.i: src/tiger/frame/x64frame.cc.i
+
+.PHONY : src/tiger/frame/x64frame.i
+
+# target to preprocess a source file
+src/tiger/frame/x64frame.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/x64frame.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/x64frame.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/x64frame.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/x64frame.cc.i
+.PHONY : src/tiger/frame/x64frame.cc.i
+
+src/tiger/frame/x64frame.s: src/tiger/frame/x64frame.cc.s
+
+.PHONY : src/tiger/frame/x64frame.s
+
+# target to generate assembly for a file
+src/tiger/frame/x64frame.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/frame/x64frame.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/frame/x64frame.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/frame/x64frame.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/frame/x64frame.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/frame/x64frame.cc.s
+.PHONY : src/tiger/frame/x64frame.cc.s
 
 src/tiger/lex/lex.o: src/tiger/lex/lex.cc.o
 
@@ -361,9 +639,11 @@ src/tiger/lex/lex.o: src/tiger/lex/lex.cc.o
 
 # target to build an object file
 src/tiger/lex/lex.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/lex/lex.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/lex/lex.cc.o
 .PHONY : src/tiger/lex/lex.cc.o
 
 src/tiger/lex/lex.i: src/tiger/lex/lex.cc.i
@@ -372,9 +652,11 @@ src/tiger/lex/lex.i: src/tiger/lex/lex.cc.i
 
 # target to preprocess a source file
 src/tiger/lex/lex.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/lex/lex.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/lex/lex.cc.i
 .PHONY : src/tiger/lex/lex.cc.i
 
 src/tiger/lex/lex.s: src/tiger/lex/lex.cc.s
@@ -383,10 +665,39 @@ src/tiger/lex/lex.s: src/tiger/lex/lex.cc.s
 
 # target to generate assembly for a file
 src/tiger/lex/lex.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/lex/lex.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/lex/lex.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/lex/lex.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/lex/lex.cc.s
 .PHONY : src/tiger/lex/lex.cc.s
+
+src/tiger/main/test_codegen.o: src/tiger/main/test_codegen.cc.o
+
+.PHONY : src/tiger/main/test_codegen.o
+
+# target to build an object file
+src/tiger/main/test_codegen.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/main/test_codegen.cc.o
+.PHONY : src/tiger/main/test_codegen.cc.o
+
+src/tiger/main/test_codegen.i: src/tiger/main/test_codegen.cc.i
+
+.PHONY : src/tiger/main/test_codegen.i
+
+# target to preprocess a source file
+src/tiger/main/test_codegen.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/main/test_codegen.cc.i
+.PHONY : src/tiger/main/test_codegen.cc.i
+
+src/tiger/main/test_codegen.s: src/tiger/main/test_codegen.cc.s
+
+.PHONY : src/tiger/main/test_codegen.s
+
+# target to generate assembly for a file
+src/tiger/main/test_codegen.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/main/test_codegen.cc.s
+.PHONY : src/tiger/main/test_codegen.cc.s
 
 src/tiger/main/test_lex.o: src/tiger/main/test_lex.cc.o
 
@@ -469,15 +780,83 @@ src/tiger/main/test_semant.cc.s:
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/main/test_semant.cc.s
 .PHONY : src/tiger/main/test_semant.cc.s
 
+src/tiger/main/test_translate.o: src/tiger/main/test_translate.cc.o
+
+.PHONY : src/tiger/main/test_translate.o
+
+# target to build an object file
+src/tiger/main/test_translate.cc.o:
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/main/test_translate.cc.o
+.PHONY : src/tiger/main/test_translate.cc.o
+
+src/tiger/main/test_translate.i: src/tiger/main/test_translate.cc.i
+
+.PHONY : src/tiger/main/test_translate.i
+
+# target to preprocess a source file
+src/tiger/main/test_translate.cc.i:
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/main/test_translate.cc.i
+.PHONY : src/tiger/main/test_translate.cc.i
+
+src/tiger/main/test_translate.s: src/tiger/main/test_translate.cc.s
+
+.PHONY : src/tiger/main/test_translate.s
+
+# target to generate assembly for a file
+src/tiger/main/test_translate.cc.s:
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/main/test_translate.cc.s
+.PHONY : src/tiger/main/test_translate.cc.s
+
+src/tiger/output/output.o: src/tiger/output/output.cc.o
+
+.PHONY : src/tiger/output/output.o
+
+# target to build an object file
+src/tiger/output/output.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/output/output.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/output/output.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/output/output.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/output/output.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/output/output.cc.o
+.PHONY : src/tiger/output/output.cc.o
+
+src/tiger/output/output.i: src/tiger/output/output.cc.i
+
+.PHONY : src/tiger/output/output.i
+
+# target to preprocess a source file
+src/tiger/output/output.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/output/output.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/output/output.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/output/output.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/output/output.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/output/output.cc.i
+.PHONY : src/tiger/output/output.cc.i
+
+src/tiger/output/output.s: src/tiger/output/output.cc.s
+
+.PHONY : src/tiger/output/output.s
+
+# target to generate assembly for a file
+src/tiger/output/output.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/output/output.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/output/output.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/output/output.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/output/output.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/output/output.cc.s
+.PHONY : src/tiger/output/output.cc.s
+
 src/tiger/parse/parse.o: src/tiger/parse/parse.cc.o
 
 .PHONY : src/tiger/parse/parse.o
 
 # target to build an object file
 src/tiger/parse/parse.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/parse/parse.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/parse/parse.cc.o
 .PHONY : src/tiger/parse/parse.cc.o
 
 src/tiger/parse/parse.i: src/tiger/parse/parse.cc.i
@@ -486,9 +865,11 @@ src/tiger/parse/parse.i: src/tiger/parse/parse.cc.i
 
 # target to preprocess a source file
 src/tiger/parse/parse.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/parse/parse.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/parse/parse.cc.i
 .PHONY : src/tiger/parse/parse.cc.i
 
 src/tiger/parse/parse.s: src/tiger/parse/parse.cc.s
@@ -497,9 +878,11 @@ src/tiger/parse/parse.s: src/tiger/parse/parse.cc.s
 
 # target to generate assembly for a file
 src/tiger/parse/parse.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/parse/parse.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/parse/parse.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/parse/parse.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/parse/parse.cc.s
 .PHONY : src/tiger/parse/parse.cc.s
 
 src/tiger/semant/semant.o: src/tiger/semant/semant.cc.o
@@ -508,9 +891,11 @@ src/tiger/semant/semant.o: src/tiger/semant/semant.cc.o
 
 # target to build an object file
 src/tiger/semant/semant.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/semant.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/semant.cc.o
 .PHONY : src/tiger/semant/semant.cc.o
 
 src/tiger/semant/semant.i: src/tiger/semant/semant.cc.i
@@ -519,9 +904,11 @@ src/tiger/semant/semant.i: src/tiger/semant/semant.cc.i
 
 # target to preprocess a source file
 src/tiger/semant/semant.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/semant.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/semant.cc.i
 .PHONY : src/tiger/semant/semant.cc.i
 
 src/tiger/semant/semant.s: src/tiger/semant/semant.cc.s
@@ -530,9 +917,11 @@ src/tiger/semant/semant.s: src/tiger/semant/semant.cc.s
 
 # target to generate assembly for a file
 src/tiger/semant/semant.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/semant.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/semant.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/semant.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/semant.cc.s
 .PHONY : src/tiger/semant/semant.cc.s
 
 src/tiger/semant/types.o: src/tiger/semant/types.cc.o
@@ -541,9 +930,11 @@ src/tiger/semant/types.o: src/tiger/semant/types.cc.o
 
 # target to build an object file
 src/tiger/semant/types.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/types.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/types.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/types.cc.o
 .PHONY : src/tiger/semant/types.cc.o
 
 src/tiger/semant/types.i: src/tiger/semant/types.cc.i
@@ -552,9 +943,11 @@ src/tiger/semant/types.i: src/tiger/semant/types.cc.i
 
 # target to preprocess a source file
 src/tiger/semant/types.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/types.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/types.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/types.cc.i
 .PHONY : src/tiger/semant/types.cc.i
 
 src/tiger/semant/types.s: src/tiger/semant/types.cc.s
@@ -563,9 +956,11 @@ src/tiger/semant/types.s: src/tiger/semant/types.cc.s
 
 # target to generate assembly for a file
 src/tiger/semant/types.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/semant/types.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/semant/types.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/semant/types.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/semant/types.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/semant/types.cc.s
 .PHONY : src/tiger/semant/types.cc.s
 
 src/tiger/symbol/symbol.o: src/tiger/symbol/symbol.cc.o
@@ -574,9 +969,11 @@ src/tiger/symbol/symbol.o: src/tiger/symbol/symbol.cc.o
 
 # target to build an object file
 src/tiger/symbol/symbol.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/symbol/symbol.cc.o
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.o
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.o
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/symbol/symbol.cc.o
 .PHONY : src/tiger/symbol/symbol.cc.o
 
 src/tiger/symbol/symbol.i: src/tiger/symbol/symbol.cc.i
@@ -585,9 +982,11 @@ src/tiger/symbol/symbol.i: src/tiger/symbol/symbol.cc.i
 
 # target to preprocess a source file
 src/tiger/symbol/symbol.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/symbol/symbol.cc.i
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.i
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.i
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/symbol/symbol.cc.i
 .PHONY : src/tiger/symbol/symbol.cc.i
 
 src/tiger/symbol/symbol.s: src/tiger/symbol/symbol.cc.s
@@ -596,10 +995,90 @@ src/tiger/symbol/symbol.s: src/tiger/symbol/symbol.cc.s
 
 # target to generate assembly for a file
 src/tiger/symbol/symbol.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/symbol/symbol.cc.s
 	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/symbol/symbol.cc.s
 	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/symbol/symbol.cc.s
 	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/symbol/symbol.cc.s
 .PHONY : src/tiger/symbol/symbol.cc.s
+
+src/tiger/translate/translate.o: src/tiger/translate/translate.cc.o
+
+.PHONY : src/tiger/translate/translate.o
+
+# target to build an object file
+src/tiger/translate/translate.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/translate.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/translate.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/translate.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/translate.cc.o
+.PHONY : src/tiger/translate/translate.cc.o
+
+src/tiger/translate/translate.i: src/tiger/translate/translate.cc.i
+
+.PHONY : src/tiger/translate/translate.i
+
+# target to preprocess a source file
+src/tiger/translate/translate.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/translate.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/translate.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/translate.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/translate.cc.i
+.PHONY : src/tiger/translate/translate.cc.i
+
+src/tiger/translate/translate.s: src/tiger/translate/translate.cc.s
+
+.PHONY : src/tiger/translate/translate.s
+
+# target to generate assembly for a file
+src/tiger/translate/translate.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/translate.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/translate.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/translate.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/translate.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/translate.cc.s
+.PHONY : src/tiger/translate/translate.cc.s
+
+src/tiger/translate/tree.o: src/tiger/translate/tree.cc.o
+
+.PHONY : src/tiger/translate/tree.o
+
+# target to build an object file
+src/tiger/translate/tree.cc.o:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/tree.cc.o
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.o
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/tree.cc.o
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/tree.cc.o
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/tree.cc.o
+.PHONY : src/tiger/translate/tree.cc.o
+
+src/tiger/translate/tree.i: src/tiger/translate/tree.cc.i
+
+.PHONY : src/tiger/translate/tree.i
+
+# target to preprocess a source file
+src/tiger/translate/tree.cc.i:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/tree.cc.i
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.i
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/tree.cc.i
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/tree.cc.i
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/tree.cc.i
+.PHONY : src/tiger/translate/tree.cc.i
+
+src/tiger/translate/tree.s: src/tiger/translate/tree.cc.s
+
+.PHONY : src/tiger/translate/tree.s
+
+# target to generate assembly for a file
+src/tiger/translate/tree.cc.s:
+	$(MAKE) -f CMakeFiles/test_codegen.dir/build.make CMakeFiles/test_codegen.dir/src/tiger/translate/tree.cc.s
+	$(MAKE) -f CMakeFiles/test_parse.dir/build.make CMakeFiles/test_parse.dir/src/tiger/translate/tree.cc.s
+	$(MAKE) -f CMakeFiles/test_lex.dir/build.make CMakeFiles/test_lex.dir/src/tiger/translate/tree.cc.s
+	$(MAKE) -f CMakeFiles/test_semant.dir/build.make CMakeFiles/test_semant.dir/src/tiger/translate/tree.cc.s
+	$(MAKE) -f CMakeFiles/test_translate.dir/build.make CMakeFiles/test_translate.dir/src/tiger/translate/tree.cc.s
+.PHONY : src/tiger/translate/tree.cc.s
 
 # Help Target
 help:
@@ -608,12 +1087,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... test_codegen"
 	@echo "... test_slp"
 	@echo "... lex_parse_sources"
 	@echo "... test_parse"
 	@echo "... test_lex"
-	@echo "... edit_cache"
 	@echo "... test_semant"
+	@echo "... test_translate"
 	@echo "... src/straightline/prog.o"
 	@echo "... src/straightline/prog.i"
 	@echo "... src/straightline/prog.s"
@@ -626,15 +1107,36 @@ help:
 	@echo "... src/tiger/absyn/absyn.o"
 	@echo "... src/tiger/absyn/absyn.i"
 	@echo "... src/tiger/absyn/absyn.s"
+	@echo "... src/tiger/canon/canon.o"
+	@echo "... src/tiger/canon/canon.i"
+	@echo "... src/tiger/canon/canon.s"
+	@echo "... src/tiger/codegen/assem.o"
+	@echo "... src/tiger/codegen/assem.i"
+	@echo "... src/tiger/codegen/assem.s"
+	@echo "... src/tiger/codegen/codegen.o"
+	@echo "... src/tiger/codegen/codegen.i"
+	@echo "... src/tiger/codegen/codegen.s"
 	@echo "... src/tiger/env/env.o"
 	@echo "... src/tiger/env/env.i"
 	@echo "... src/tiger/env/env.s"
 	@echo "... src/tiger/errormsg/errormsg.o"
 	@echo "... src/tiger/errormsg/errormsg.i"
 	@echo "... src/tiger/errormsg/errormsg.s"
+	@echo "... src/tiger/escape/escape.o"
+	@echo "... src/tiger/escape/escape.i"
+	@echo "... src/tiger/escape/escape.s"
+	@echo "... src/tiger/frame/temp.o"
+	@echo "... src/tiger/frame/temp.i"
+	@echo "... src/tiger/frame/temp.s"
+	@echo "... src/tiger/frame/x64frame.o"
+	@echo "... src/tiger/frame/x64frame.i"
+	@echo "... src/tiger/frame/x64frame.s"
 	@echo "... src/tiger/lex/lex.o"
 	@echo "... src/tiger/lex/lex.i"
 	@echo "... src/tiger/lex/lex.s"
+	@echo "... src/tiger/main/test_codegen.o"
+	@echo "... src/tiger/main/test_codegen.i"
+	@echo "... src/tiger/main/test_codegen.s"
 	@echo "... src/tiger/main/test_lex.o"
 	@echo "... src/tiger/main/test_lex.i"
 	@echo "... src/tiger/main/test_lex.s"
@@ -644,6 +1146,12 @@ help:
 	@echo "... src/tiger/main/test_semant.o"
 	@echo "... src/tiger/main/test_semant.i"
 	@echo "... src/tiger/main/test_semant.s"
+	@echo "... src/tiger/main/test_translate.o"
+	@echo "... src/tiger/main/test_translate.i"
+	@echo "... src/tiger/main/test_translate.s"
+	@echo "... src/tiger/output/output.o"
+	@echo "... src/tiger/output/output.i"
+	@echo "... src/tiger/output/output.s"
 	@echo "... src/tiger/parse/parse.o"
 	@echo "... src/tiger/parse/parse.i"
 	@echo "... src/tiger/parse/parse.s"
@@ -656,6 +1164,12 @@ help:
 	@echo "... src/tiger/symbol/symbol.o"
 	@echo "... src/tiger/symbol/symbol.i"
 	@echo "... src/tiger/symbol/symbol.s"
+	@echo "... src/tiger/translate/translate.o"
+	@echo "... src/tiger/translate/translate.i"
+	@echo "... src/tiger/translate/translate.s"
+	@echo "... src/tiger/translate/tree.o"
+	@echo "... src/tiger/translate/tree.i"
+	@echo "... src/tiger/translate/tree.s"
 .PHONY : help
 
 

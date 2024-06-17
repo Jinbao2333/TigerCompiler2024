@@ -26,6 +26,40 @@ tiger/semant/types.h
 tiger/symbol/symbol.h
 ../src/tiger/absyn/tiger/symbol/symbol.h
 
+../src/tiger/canon/canon.h
+cstdio
+-
+list
+-
+memory
+-
+vector
+-
+tiger/frame/temp.h
+../src/tiger/canon/tiger/frame/temp.h
+tiger/translate/tree.h
+../src/tiger/canon/tiger/translate/tree.h
+
+../src/tiger/codegen/assem.h
+cstdio
+-
+string
+-
+vector
+-
+tiger/frame/temp.h
+../src/tiger/codegen/tiger/frame/temp.h
+
+../src/tiger/codegen/codegen.h
+tiger/canon/canon.h
+../src/tiger/codegen/tiger/canon/canon.h
+tiger/codegen/assem.h
+../src/tiger/codegen/tiger/codegen/assem.h
+tiger/frame/x64frame.h
+../src/tiger/codegen/tiger/frame/x64frame.h
+tiger/translate/tree.h
+../src/tiger/codegen/tiger/translate/tree.h
+
 ../src/tiger/env/env.h
 tiger/frame/temp.h
 ../src/tiger/env/tiger/frame/temp.h
@@ -59,6 +93,8 @@ tiger/frame/temp.h
 ../src/tiger/frame/tiger/frame/temp.h
 tiger/translate/tree.h
 ../src/tiger/frame/tiger/translate/tree.h
+tiger/codegen/assem.h
+../src/tiger/frame/tiger/codegen/assem.h
 
 ../src/tiger/frame/temp.h
 tiger/symbol/symbol.h
@@ -99,6 +135,28 @@ vector
 -
 memory
 -
+
+../src/tiger/output/logger.h
+cstdarg
+-
+tiger/canon/canon.h
+../src/tiger/output/tiger/canon/canon.h
+tiger/codegen/codegen.h
+../src/tiger/output/tiger/codegen/codegen.h
+
+../src/tiger/output/output.h
+list
+-
+memory
+-
+string
+-
+tiger/canon/canon.h
+../src/tiger/output/tiger/canon/canon.h
+tiger/codegen/codegen.h
+../src/tiger/output/tiger/codegen/codegen.h
+tiger/frame/frame.h
+../src/tiger/output/tiger/frame/frame.h
 
 ../src/tiger/parse/parser.h
 iostream
@@ -190,6 +248,24 @@ tiger/absyn/absyn.h
 tiger/errormsg/errormsg.h
 /home/stu/tiger-compiler/src/tiger/absyn/tiger/errormsg/errormsg.h
 
+/home/stu/tiger-compiler/src/tiger/canon/canon.cc
+tiger/canon/canon.h
+/home/stu/tiger-compiler/src/tiger/canon/tiger/canon/canon.h
+
+/home/stu/tiger-compiler/src/tiger/codegen/assem.cc
+tiger/codegen/assem.h
+/home/stu/tiger-compiler/src/tiger/codegen/tiger/codegen/assem.h
+cassert
+-
+
+/home/stu/tiger-compiler/src/tiger/codegen/codegen.cc
+tiger/codegen/codegen.h
+/home/stu/tiger-compiler/src/tiger/codegen/tiger/codegen/codegen.h
+cassert
+-
+sstream
+-
+
 /home/stu/tiger-compiler/src/tiger/env/env.cc
 tiger/env/env.h
 /home/stu/tiger-compiler/src/tiger/env/tiger/env/env.h
@@ -212,6 +288,20 @@ tiger/escape/escape.h
 tiger/absyn/absyn.h
 /home/stu/tiger-compiler/src/tiger/escape/tiger/absyn/absyn.h
 
+/home/stu/tiger-compiler/src/tiger/frame/frame.h
+list
+-
+memory
+-
+string
+-
+tiger/frame/temp.h
+/home/stu/tiger-compiler/src/tiger/frame/tiger/frame/temp.h
+tiger/translate/tree.h
+/home/stu/tiger-compiler/src/tiger/frame/tiger/translate/tree.h
+tiger/codegen/assem.h
+/home/stu/tiger-compiler/src/tiger/frame/tiger/codegen/assem.h
+
 /home/stu/tiger-compiler/src/tiger/frame/temp.cc
 tiger/frame/temp.h
 /home/stu/tiger-compiler/src/tiger/frame/tiger/frame/temp.h
@@ -225,6 +315,10 @@ sstream
 /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc
 tiger/frame/x64frame.h
 /home/stu/tiger-compiler/src/tiger/frame/tiger/frame/x64frame.h
+frame.h
+/home/stu/tiger-compiler/src/tiger/frame/frame.h
+sstream
+-
 
 /home/stu/tiger-compiler/src/tiger/lex/lex.cc
 iostream
@@ -286,6 +380,14 @@ tiger/parse/parser.h
 tiger/semant/semant.h
 /home/stu/tiger-compiler/src/tiger/main/tiger/semant/semant.h
 
+/home/stu/tiger-compiler/src/tiger/output/output.cc
+tiger/output/output.h
+/home/stu/tiger-compiler/src/tiger/output/tiger/output/output.h
+cstdio
+-
+tiger/output/logger.h
+/home/stu/tiger-compiler/src/tiger/output/tiger/output/logger.h
+
 /home/stu/tiger-compiler/src/tiger/parse/parse.cc
 parser.ih
 /home/stu/tiger-compiler/src/tiger/parse/parser.ih
@@ -317,12 +419,12 @@ tiger/env/env.h
 /home/stu/tiger-compiler/src/tiger/translate/tiger/env/env.h
 tiger/errormsg/errormsg.h
 /home/stu/tiger-compiler/src/tiger/translate/tiger/errormsg/errormsg.h
-tiger/frame/x64frame.h
-/home/stu/tiger-compiler/src/tiger/translate/tiger/frame/x64frame.h
-tiger/frame/temp.h
-/home/stu/tiger-compiler/src/tiger/translate/tiger/frame/temp.h
 tiger/frame/frame.h
 /home/stu/tiger-compiler/src/tiger/translate/tiger/frame/frame.h
+tiger/frame/temp.h
+/home/stu/tiger-compiler/src/tiger/translate/tiger/frame/temp.h
+tiger/frame/x64frame.h
+/home/stu/tiger-compiler/src/tiger/translate/tiger/frame/x64frame.h
 
 /home/stu/tiger-compiler/src/tiger/translate/tree.cc
 tiger/translate/tree.h

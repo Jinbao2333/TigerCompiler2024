@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/test_slp.dir/src/straightline/prog.cc.o CMakeFiles/test_slp.dir/src/straightline/slp.cc.o CMakeFiles/test_slp.dir/src/straightline/test_slp.cc.o  -o test_slp 
+/usr/bin/g++  -O3 -DNDEBUG  -rdynamic CMakeFiles/test_slp.dir/src/straightline/prog.cc.o CMakeFiles/test_slp.dir/src/straightline/slp.cc.o CMakeFiles/test_slp.dir/src/straightline/test_slp.cc.o  -o test_slp 

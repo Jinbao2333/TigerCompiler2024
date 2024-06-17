@@ -3,6 +3,7 @@
 
 CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -13,8 +14,33 @@ CMakeFiles/test_semant.dir/src/tiger/absyn/absyn.cc.o
  ../src/tiger/translate/tree.h
  ../src/tiger/util/table.h
  /home/stu/tiger-compiler/src/tiger/absyn/absyn.cc
+CMakeFiles/test_semant.dir/src/tiger/canon/canon.cc.o
+ ../src/tiger/canon/canon.h
+ ../src/tiger/frame/temp.h
+ ../src/tiger/symbol/symbol.h
+ ../src/tiger/translate/tree.h
+ ../src/tiger/util/table.h
+ /home/stu/tiger-compiler/src/tiger/canon/canon.cc
+CMakeFiles/test_semant.dir/src/tiger/codegen/assem.cc.o
+ ../src/tiger/codegen/assem.h
+ ../src/tiger/frame/temp.h
+ ../src/tiger/symbol/symbol.h
+ ../src/tiger/util/table.h
+ /home/stu/tiger-compiler/src/tiger/codegen/assem.cc
+CMakeFiles/test_semant.dir/src/tiger/codegen/codegen.cc.o
+ ../src/tiger/canon/canon.h
+ ../src/tiger/codegen/assem.h
+ ../src/tiger/codegen/codegen.h
+ ../src/tiger/frame/frame.h
+ ../src/tiger/frame/temp.h
+ ../src/tiger/frame/x64frame.h
+ ../src/tiger/symbol/symbol.h
+ ../src/tiger/translate/tree.h
+ ../src/tiger/util/table.h
+ /home/stu/tiger-compiler/src/tiger/codegen/codegen.cc
 CMakeFiles/test_semant.dir/src/tiger/env/env.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -32,6 +58,7 @@ CMakeFiles/test_semant.dir/src/tiger/errormsg/errormsg.cc.o
  /home/stu/tiger-compiler/src/tiger/errormsg/errormsg.cc
 CMakeFiles/test_semant.dir/src/tiger/escape/escape.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -48,15 +75,18 @@ CMakeFiles/test_semant.dir/src/tiger/frame/temp.cc.o
  ../src/tiger/util/table.h
  /home/stu/tiger-compiler/src/tiger/frame/temp.cc
 CMakeFiles/test_semant.dir/src/tiger/frame/x64frame.cc.o
+ ../src/tiger/codegen/assem.h
  ../src/tiger/frame/frame.h
  ../src/tiger/frame/temp.h
  ../src/tiger/frame/x64frame.h
  ../src/tiger/symbol/symbol.h
  ../src/tiger/translate/tree.h
  ../src/tiger/util/table.h
+ /home/stu/tiger-compiler/src/tiger/frame/frame.h
  /home/stu/tiger-compiler/src/tiger/frame/x64frame.cc
 CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -73,6 +103,7 @@ CMakeFiles/test_semant.dir/src/tiger/lex/lex.cc.o
  /home/stu/tiger-compiler/src/tiger/lex/scannerbase.h
 CMakeFiles/test_semant.dir/src/tiger/main/test_semant.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -88,8 +119,22 @@ CMakeFiles/test_semant.dir/src/tiger/main/test_semant.cc.o
  ../src/tiger/translate/tree.h
  ../src/tiger/util/table.h
  /home/stu/tiger-compiler/src/tiger/main/test_semant.cc
+CMakeFiles/test_semant.dir/src/tiger/output/output.cc.o
+ ../src/tiger/canon/canon.h
+ ../src/tiger/codegen/assem.h
+ ../src/tiger/codegen/codegen.h
+ ../src/tiger/frame/frame.h
+ ../src/tiger/frame/temp.h
+ ../src/tiger/frame/x64frame.h
+ ../src/tiger/output/logger.h
+ ../src/tiger/output/output.h
+ ../src/tiger/symbol/symbol.h
+ ../src/tiger/translate/tree.h
+ ../src/tiger/util/table.h
+ /home/stu/tiger-compiler/src/tiger/output/output.cc
 CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -107,6 +152,7 @@ CMakeFiles/test_semant.dir/src/tiger/parse/parse.cc.o
  /home/stu/tiger-compiler/src/tiger/parse/parser.ih
 CMakeFiles/test_semant.dir/src/tiger/semant/semant.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
@@ -129,6 +175,7 @@ CMakeFiles/test_semant.dir/src/tiger/symbol/symbol.cc.o
  /home/stu/tiger-compiler/src/tiger/symbol/symbol.cc
 CMakeFiles/test_semant.dir/src/tiger/translate/translate.cc.o
  ../src/tiger/absyn/absyn.h
+ ../src/tiger/codegen/assem.h
  ../src/tiger/env/env.h
  ../src/tiger/errormsg/errormsg.h
  ../src/tiger/escape/escape.h
