@@ -45,8 +45,7 @@ enum Oper {
   LE_OP,
   GT_OP,
   GE_OP,
-  AND_OP,
-  OR_OP,
+
   ABSYN_OPER_COUNT,
 };
 

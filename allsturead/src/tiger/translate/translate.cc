@@ -380,42 +380,6 @@ tr::ExpAndTy *OpExp::Translate(env::VEnvPtr venv, env::TEnvPtr tenv,
       result = left;
     }
 
-    if (oper_ == absyn::AND_OP || oper_ == absyn::OR_OP) {
-      temp::Label *second_condition_label = temp::LabelFactory::NewLabel();
-      tr::Cx left_cx = left->exp_->UnCx(errormsg);
-      tr::Cx right_cx = right->exp_->UnCx(errormsg);
-
-      switch (oper_) {
-      case absyn::AND_OP: {
-        left_cx.trues_.DoPatch(second_condition_label);
-        tr::PatchList true_list = tr::PatchList(right_cx.trues_);
-        tr::PatchList false_list =
-            tr::PatchList::JoinPatch(left_cx.falses_, right_cx.falses_);
-        tree::SeqStm *stm = new tree::SeqStm(
-            left_cx.stm_,
-            new tree::SeqStm(new tree::LabelStm(second_condition_label),
-                             right_cx.stm_));
-        result = new tr::ExpAndTy(new tr::CxExp(true_list, false_list, stm),
-                                  type::IntTy::Instance());
-        break;
-      }
-
-      case absyn::OR_OP: {
-        left_cx.falses_.DoPatch(second_condition_label);
-        tr::PatchList true_list =
-            tr::PatchList::JoinPatch(left_cx.trues_, right_cx.trues_);
-        tr::PatchList false_list = tr::PatchList(right_cx.falses_);
-        tree::SeqStm *stm = new tree::SeqStm(
-            left_cx.stm_,
-            new tree::SeqStm(new tree::LabelStm(second_condition_label),
-                             right_cx.stm_));
-        result = new tr::ExpAndTy(new tr::CxExp(true_list, false_list, stm),
-                                  type::IntTy::Instance());
-        break;
-      }
-      }
-
-    } else {
 
       tree::CjumpStm *cjump_stm = nullptr;
       tree::RelOp rel_op;
@@ -465,7 +429,7 @@ tr::ExpAndTy *OpExp::Translate(env::VEnvPtr venv, env::TEnvPtr tenv,
       tr::PatchList false_list = tr::PatchList({&(cjump_stm->false_label_)});
       result = new tr::ExpAndTy(new tr::CxExp(true_list, false_list, cjump_stm),
                                 type::IntTy::Instance());
-    }
+    
   }
 
   return result;
